@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(45deg, rgb(3, 129, 255), blue ) no-repeat fixed;
+    align-items: center;
+    justify-content: center;
+}
+.principal{
+    border: 2px white solid;
+    width: 500px;
+    height: 550px;
+    padding: 50px;
+    display: grid;
+    grid-row: 2;
+    gap: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.newtask{
+    display: flex;
+    width: 400px;
+    height: 70px;
+    background-color: rgb(4, 130, 255);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    filter: drop-shadow( 1px 1px 7px black);
+    padding: 20px;
+}
+#listtask{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(4, 130, 255);
+    border-radius: 7px;
+    padding: 20px;
+    filter: drop-shadow( 1px 1px 7px black);
+    word-break: break-all;
+    overflow-y: scroll;
+    
+}
+#listtask::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 7px;
+    background-color: rgb(4, 130, 255);
+    filter: drop-shadow( 1px 1px 7px black);
+}
+#listtask::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background-color:rgb(255, 255, 255);
+    filter: drop-shadow( 1px 1px 7px black);
+}
+.newtask input{
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+    padding: 10px;
+    outline: 0;
+}
+#btn{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    background: rgb(0, 51, 255);
+    color: white;
+    cursor: pointer;
+}
+#btn:hover{
+   filter: brightness(0.7);
+}
+.delet{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    background: rgb(0, 51, 255);
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
